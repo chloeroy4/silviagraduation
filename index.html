@@ -18,7 +18,8 @@
       display: flex;
       justify-content: space-between;
       align-items: center;
-      padding: 15px;
+      padding: 10px 20px;
+      position: relative;
     }
 
     .menu-toggle {
@@ -27,11 +28,26 @@
       font-size: 24px;
       color: #0f4a7c;
       cursor: pointer;
+      position: absolute;
+      left: 20px;
     }
 
-    .logos img {
+    .top-logos {
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 10px 40px;
+    }
+
+    .top-logos .center-logo {
+      position: absolute;
+      left: 50%;
+      transform: translateX(-50%);
+    }
+
+    .top-logos img {
       height: 40px;
-      margin-left: 10px;
     }
 
     .menu {
@@ -40,7 +56,8 @@
       background-color: #e3edfc;
       position: absolute;
       top: 60px;
-      left: 15px;
+      left: 20px;
+      z-index: 10;
     }
 
     .menu a {
@@ -51,7 +68,7 @@
 
     .content {
       text-align: center;
-      max-width: 700px;
+      max-width: 800px;
       margin: 60px auto;
       padding: 20px;
     }
@@ -68,9 +85,9 @@
     }
 
     .divider {
-      width: 33%;
+      width: 75%;
       margin: 30px auto;
-      border: 2px solid #0f4a7c;
+      border: 1px solid #0f4a7c;
     }
 
     .more-info-button {
@@ -88,8 +105,8 @@
 
   <header>
     <button class="menu-toggle" onclick="toggleMenu()">☰</button>
-    <div class="logos">
-      <img src="image1.png" alt="Logo 1">
+    <div class="top-logos">
+      <img src="image1.png" alt="Logo 1" class="center-logo">
       <img src="image2.png" alt="Logo 2">
     </div>
   </header>
