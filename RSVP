@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Home Page</title>
+  <title>RSVP</title>
   <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
   <style>
@@ -133,5 +133,14 @@
 
   </main>
 
-    <!-- End of Home Section -->
-  <hr class="divider" style="width:100%; margin:60px auto; border-width:2px;">
+<hr class="divider" style="width:100%; margin:60px auto; border-width:2px;">
+
+  <script>
+    function toggleMenu() {
+      const menu = document.getElementById('navMenu');
+      menu.style.display = menu.style.display === 'flex' ? 'none' : 'flex';
+    }
+  </script>
+</body>
+</html>
+
