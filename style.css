@@ -1,12 +1,13 @@
-/* HOME page styling */
+/* General Page Styles */
 body {
-  margin: 0;
   font-family: 'Lora', serif;
   background-color: #e3edfc;
   color: #0f4a7c;
-  text-allign: center; 
+  margin: 0;
+  padding: 0;
 }
 
+/* Header & Logos */
 header {
   display: flex;
   justify-content: space-between;
@@ -15,66 +16,79 @@ header {
   position: relative;
 }
 
-.menu-toggle {
-  font-size: 30px;
-  background: none;
-  border: none;
-  color: #0f4a7c;
-  cursor: pointer;
+.top-logos {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 40px;
 }
 
+.top-logos .center-logo {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.top-logos img {
+  height: 40px;
+}
+
+/* Hamburger Menu */
+.menu-toggle {
+  background: none;
+  border: none;
+  font-size: 24px;
+  color: #0f4a7c;
+  cursor: pointer;
+  position: absolute;
+  right: 20px;
+}
+
+/* Menu Dropdown */
 .menu {
   display: none;
   flex-direction: column;
+  background-color: #e3edfc;
   position: absolute;
   top: 60px;
   right: 20px;
-  background-color: #e3edfc;
-  border: 1px solid #0f4a7c;
-  padding: 25px;
+  z-index: 10;
 }
 
 .menu a {
-  text-decoration: none;
   color: #0f4a7c;
-  margin: 8px 0;
+  text-decoration: none;
+  padding: 10px 0;
   font-weight: bold;
 }
 
-.logos {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-.logos img {
-  height: 80px;
-  width: 80px;
-  margin: 5px 0;
-}
-
-main {
+/* Page Content */
+.content {
+  text-align: center;
+  max-width: 800px;
+  margin: 60px auto;
   padding: 20px;
 }
 
-/* INFO page styling */
-.info-page {
-  text-align: center;
-  padding: 40px 20px;
+.content h1 {
+  font-size: 2.5rem;
 }
 
-.info-page h2 {
-  font-size: 2rem;
-  color: #0f4a7c;
-  margin-bottom: 20px;
-}
-
-.info-page p {
+.content p {
   font-size: 1.2rem;
-  margin: 15px 0;
+  margin: 10px 0;
 }
 
-.info-page button {
+/* Divider Line */
+.divider {
+  width: 75%;
+  margin: 30px auto;
+  border: 1px solid #0f4a7c;
+}
+
+/* Button Style */
+.more-info-button {
   background-color: #0f4a7c;
   color: #e3edfc;
   padding: 15px 30px;
@@ -82,9 +96,8 @@ main {
   border: none;
   border-radius: 6px;
   cursor: pointer;
-  margin-top: 20px;
 }
 
-.info-page button:hover {
-  background-color: #FF924A;
+.more-info-button:hover {
+  background-color: #0c3c65;
 }
