@@ -1,3 +1,4 @@
+/* HOME page styling */
 body {
   margin: 0;
   font-family: 'Lora', serif;
@@ -53,4 +54,36 @@ header {
 
 main {
   padding: 20px;
+}
+
+/* INFO page styling */
+.info-page {
+  text-align: center;
+  padding: 40px 20px;
+}
+
+.info-page h2 {
+  font-size: 2rem;
+  color: #0f4a7c;
+  margin-bottom: 20px;
+}
+
+.info-page p {
+  font-size: 1.2rem;
+  margin: 15px 0;
+}
+
+.info-page button {
+  background-color: #0f4a7c;
+  color: #e3edfc;
+  padding: 15px 30px;
+  font-size: 1.1rem;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  margin-top: 20px;
+}
+
+.info-page button:hover {
+  background-color: #FF924A;
 }
