@@ -2,21 +2,23 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Infos</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Info Page</title>
   <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
+  <!-- HEADER -->
   <header>
     <button class="menu-toggle" onclick="toggleMenu()">☰</button>
-    <div class="logos">
-      <img src="image1.png" alt="Logo 1">
+    <div class="top-logos">
+      <img src="image1.png" alt="Logo 1" class="center-logo">
       <img src="image2.png" alt="Logo 2">
     </div>
   </header>
 
+  <!-- NAVIGATION MENU (same as on homepage) -->
   <nav class="menu" id="navMenu">
     <a href="index.html">HOME PAGE</a>
     <a href="infos.html">INFOS</a>
@@ -26,17 +28,37 @@
     <a href="thesis.html">THE THESIS</a>
   </nav>
 
-  <main>
-    <h1>Information Page</h1>
-    <p>Here you can add important details about your graduation, such as the schedule, speakers, and any other info that your visitors should know.</p>
+  <!-- MAIN CONTENT -->
+  <main class="content">
+    <h1>Information you might want to know</h1>
+
+    <p><strong>When?</strong></p>
+    <p>July 22nd 2025</p>
+
+    <p><strong>Where?</strong></p>
+    <p>The Economics Department of University of Pisa</p>
+    <a href="https://www.google.com/maps?q=University+of+Pisa" target="_blank">View Location on Map</a>
+
+    <p><strong>The schedule of the day</strong></p>
+    <ul>
+      <li>10:00 - The graduation in the department Aula n x</li>
+      <li>12:00 - The aperitif at the Chalet's Garden</li>
+      <li>17:30 - The tour of Pisa</li>
+      <li>20:30 - The dinner at TBD</li>
+    </ul>
+
+    <a href="locations.html">
+      <button class="more-info-button">Find out more about the locations</button>
+    </a>
   </main>
 
+  <!-- SCRIPT -->
   <script>
     function toggleMenu() {
       const menu = document.getElementById('navMenu');
       menu.style.display = menu.style.display === 'flex' ? 'none' : 'flex';
     }
   </script>
-
+  
 </body>
 </html>
