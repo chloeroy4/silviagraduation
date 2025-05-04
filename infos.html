@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Infos</title>
+  <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header>
+    <button class="menu-toggle" onclick="toggleMenu()">☰</button>
+    <div class="logos">
+      <img src="image1.png" alt="Logo 1">
+      <img src="image2.png" alt="Logo 2">
+    </div>
+  </header>
+
+  <nav class="menu" id="navMenu">
+    <a href="index.html">HOME PAGE</a>
+    <a href="infos.html">INFOS</a>
+    <a href="locations.html">THE LOCATIONS</a>
+    <a href="rsvp.html">RSVP</a>
+    <a href="tour.html">THE TOUR</a>
+    <a href="thesis.html">THE THESIS</a>
+  </nav>
+
+  <main>
+    <h1>Information Page</h1>
+    <p>Here you can add important details about your graduation, such as the schedule, speakers, and any other info that your visitors should know.</p>
+  </main>
+
+  <script>
+    function toggleMenu() {
+      const menu = document.getElementById('navMenu');
+      menu.style.display = menu.style.display === 'flex' ? 'none' : 'flex';
+    }
+  </script>
+
+</body>
+</html>
