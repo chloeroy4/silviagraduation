@@ -121,16 +121,40 @@
   </nav>
 
   <main class="content">
-    <h1>Silvia's Graduation</h1>
-    <p>22/07/2025</p>
-    <p>University of Pisa</p>
-    <p>Bachelor of Management for Business and Economics</p>
-    <p>Thesis name to be defined yet - econometrics</p>
+  <section id="rsvp" class="content">
+    <h2>Will you be present?</h2>
+    <p>Please RSVP here before June 30th</p>
 
-    <hr class="divider"/>
+    <!-- RSVP Form -->
+    <form class="rsvp-form" action="your-backend-script-here" method="POST">
+      <input type="text" name="name" placeholder="NAME" required />
+      <input type="text" name="surname" placeholder="SURNAME" required />
+      <textarea name="thoughts" placeholder="Leave a thought for me if you'd like" rows="4"></textarea>
+      <button type="submit">Send</button>
+    </form>
 
-    <p>Thank you, if you're here you are an important part of my life and it would be very nice to have you at my graduation.</p>
+    <!-- Additional Info Section -->
+    <div class="info-text">
+      <h3>MORE INFOS!!</h3>
+      <p><strong>How to dress:</strong></p>
+      <p>July in Pisa is very very hot, so my advice is very light clothes. If you'd like to adhere to the suggested color scheme, that would be very nice. Here are the colours:</p>
+      <img src="image.9" alt="Suggested Colors" class="image-center" />
 
+      <p><strong>Where to sleep?</strong></p>
+      <p>We have some advice on where you can sleep:</p>
+      <ul>
+        <li><a href="link-to-option-1">Option 1</a></li>
+        <li><a href="link-to-option-2">Option 2</a></li>
+      </ul>
+
+      <p><strong>Do you want to gift me anything?</strong></p>
+      <p>I'd just really like you to be present, and so your presence and the fact you came to Pisa is so much more than you can imagine. If you'd still like to gift me something, I have no preference or list. If you'd like to gift money, it would be preferred to have it via bank transfer:</p>
+      <p><strong>IBAN:</strong> blabla</p>
+      <p><strong>Name:</strong> Silvia</p>
+    </div>
+  </section>
+
+  <hr class="divider">
   </main>
 
 <hr class="divider" style="width:100%; margin:60px auto; border-width:2px;">
